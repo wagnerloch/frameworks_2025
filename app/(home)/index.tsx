@@ -15,6 +15,13 @@ export default function Index() {
       <Link href={"/register"}>Ir para o cadastro</Link>
       <Link href={"/config"}>Ir para as configurações</Link>
       <Link href={"/config/user"}>Ir para as configurações do usuário</Link>
+      <Link
+        href={{
+          pathname: '/produtos/[id]',
+          params: { id: 'bacon' },
+        }}>
+        Ver detalhes do produto bacon
+      </Link>
     </View>
   );
 }
