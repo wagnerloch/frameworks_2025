@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { useState } from "react";
 import { Button, Dimensions, Image, StyleSheet, Text, TextInput, View } from "react-native";
 
@@ -25,6 +26,9 @@ export default function Login() {
   const submit = () => {
     console.log(email);
     console.log(whatsapp);
+    // Enviar dados via API
+    // Se tudo der certo, redirecionar para a página inicial
+    router.push({pathname: "/(form)/form1", params: {email, whatsapp}});  
   }
 
   return (
