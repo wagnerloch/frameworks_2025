@@ -11,17 +11,11 @@ export default function Index() {
       }}
     >
       <Text>Página inicial!!</Text>
-      <Link href={"/login"}>Ir para o login</Link>
-      <Link href={"/register"}>Ir para o cadastro</Link>
-      <Link href={"/config"}>Ir para as configurações</Link>
-      <Link href={"/config/user"}>Ir para as configurações do usuário</Link>
-      <Link
-        href={{
-          pathname: '/produtos/[id]',
-          params: { id: 'bacon' },
-        }}>
-        Ver detalhes do produto bacon
-      </Link>
+      <Text>Nesta página vamos verificar se existe ou não dados do usuário</Text>
+      <Text>Caso já exista, ele será direcionado para a Página Inicial</Text>
+      <Text>Caso não exista, ele será direcionado para a Página de Login</Text>
+      <Link href={"/login"}>Ir para o login/cadastro</Link>
+      <Link href={"/(form)/form1"}>Ir para o início</Link>
     </View>
   );
 }

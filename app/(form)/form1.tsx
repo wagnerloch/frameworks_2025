@@ -9,7 +9,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Página de configurações!!</Text>
+      <Text>Página de início do meu app!!</Text>
     </View>
   );
 }
